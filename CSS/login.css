@@ -1,0 +1,274 @@
+:root {
+  background-color: #010103;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  border-bottom: 2px #d3ad7f solid;
+}
+header .logo img {
+  height: 70px;
+  margin-left: 30%;
+  margin-top: 11%;
+  margin-bottom: 11%;
+  padding-right: 60px;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+header nav ul li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  transition: all 0.5s ease;
+  padding: 10px 10px;
+}
+header .container nav ul li a.active,
+header .container nav ul li a:hover {
+  color: #d29142;
+}
+/* Start icons */
+.icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 30px;
+}
+.icons ul {
+  display: flex;
+  list-style: none;
+}
+.icons ul li a i {
+  color: white;
+  font-size: 25px;
+  padding: 10px 10px;
+  transition: linear 0.4s;
+}
+.icons ul li a i:hover {
+  color: #d29142;
+  transform: scale(1.4);
+  padding-bottom: 5px;
+}
+.menu-btn {
+  font-size: 35px;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+/* ============================= */
+
+@media (max-width: 900px) {
+  .menu-btn {
+    display: block;
+  }
+  .slider {
+    display: none;
+  }
+  nav ul {
+    position: absolute;
+    top: 100%;
+    right: 500%;
+    width: 270px;
+    height: 425px;
+    background: #282829;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 10px;
+    z-index: 1000;
+  }
+  .menu-btn {
+    margin-left: 10%;
+    transition: linear 0.4s;
+  }
+  .menu-btn:hover {
+    color: #d29142;
+    transform: scale(1.4);
+    padding-bottom: 5px;
+  }
+  nav ul a {
+    display: block;
+    margin: 12px 0;
+    padding: 0px 25px;
+    transition: all 0.5s ease;
+  }
+  nav ul a:hover {
+    color: #d29142;
+  }
+  nav ul a.active {
+    color: #d29142;
+  }
+  nav ul.open {
+    right: 2%;
+  }
+}
+
+/* ================================== */
+
+/* start register */
+.reg-container {
+  background-image: url(../images/home-img.jpg);
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reg-container .form {
+  width: 300px;
+  height: max-content;
+  background-color: #1d1d1f;
+  position: relative;
+  margin: 6% auto;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.reg-container .form .heading {
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  padding-top: 5%;
+  padding-bottom: 10px;
+  font-size: 30px;
+}
+
+.reg-container .form .heading span {
+  color: #d3ad7f;
+  text-transform: uppercase;
+}
+
+/* social styling */
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-icons a {
+  font-size: 25px;
+  color: white;
+  transition: linear 0.3s;
+  padding: 5%;
+}
+.social-icons a:hover {
+  color: #c97106;
+}
+/* Form styling */
+form {
+  position: relative;
+  width: 270px;
+}
+form .input-field {
+  width: 100%;
+  padding: 10px 8px;
+  margin: 5px;
+  border: 0;
+  border-bottom: 1px solid #010103;
+  outline: none;
+  background: transparent;
+  color: white;
+}
+
+.submit-btn {
+  width: 80%;
+  padding: 10px 30px;
+  display: block;
+  cursor: pointer;
+  background: transparent;
+  border: 3px solid #010103;
+  border-radius: 10px;
+  transition: linear 0.3s;
+  margin: 28px 15%;
+  color: white;
+  font-size: 15px;
+  font-family: sans-serif;
+}
+
+.reset-btn {
+  width: 40%;
+  padding: 10px 30px;
+  display: block;
+  cursor: pointer;
+  background: transparent;
+  border: 3px solid #010103;
+  border-radius: 10px;
+  transition: linear 0.3s;
+  margin: 28px 35%;
+  color: white;
+  font-size: 15px;
+  font-family: sans-serif;
+}
+.submit-btn:hover,
+.reset-btn:hover {
+  background-color: #c97106;
+}
+.form p {
+  color: white;
+  margin-left: 15%;
+  margin-bottom: 5px;
+}
+.form p span a {
+  text-decoration: none;
+  color: blue;
+}
+
+/* end register */
+
+/* Satrt Footer */
+footer {
+  background-color: #1d1d1f;
+  height: auto;
+}
+.social {
+  display: block;
+  text-align: center;
+  border-top: 4px #d3ad7f solid;
+  margin-top: -4px;
+}
+.social a i {
+  margin: 40px;
+  font-size: 50px;
+  color: rgb(114, 189, 186);
+  transition: linear 0.3s;
+}
+.social a i:hover {
+  color: #d29142;
+  transform: scale(1.2);
+}
+.creators {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-bottom: 50px;
+  text-align: center;
+  color: white;
+}
+footer .creators span a {
+  color: rgb(255, 0, 0);
+  text-decoration: none;
+  transition: linear 0.3s;
+}
+footer .creators span a:hover {
+  color: #c97106;
+}
+/* End Footer */
